@@ -135,3 +135,52 @@ section.s5
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 390px) {
+  .bgImg {
+    height: 200px; /* 背景画像の高さを縮小 */
+  }
+
+  .diffImgContainer {
+    width: 100% !important;
+    height: 200px !important; /* 画像コンテナの高さも調整 */
+  }
+
+  .bgImg img {
+    width: 100%;
+    height: auto; /* アスペクト比を保ったまま縮小 */
+  }
+
+  section > .contain {
+    width: 90%; /* セクション内のコンテンツを画面幅にフィット */
+  }
+
+  h1 {
+    font-size: 18px; /* タイトルのフォントサイズを縮小 */
+    padding: 10px 5px;
+  }
+
+  h2 {
+    font-size: 14px; /* セクションタイトルのフォントサイズ */
+    margin-bottom: 8px;
+  }
+
+  .interview .speech {
+    flex-direction: column; /* スピーカーとコンテンツを縦並びに */
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .speaker {
+    font-size: 12px; /* スピーカー名を小さく */
+    margin-bottom: 5px;
+  }
+
+  .content {
+    font-size: 12px; /* 内容部分をコンパクトに */
+  }
+
+  section {
+    padding: 10px 0; /* セクション全体の余白を調整 */
+  }
+}
